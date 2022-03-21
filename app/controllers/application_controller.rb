@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   impersonates :user
-  include Pundit
+  # DEPRECATION WARNING: 'include Pundit' is deprecated. Please use 'include Pundit::Authorization' instead.
+  include Pundit::Authorization
 
   protect_from_forgery with: :exception
 
