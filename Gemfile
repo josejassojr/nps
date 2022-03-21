@@ -5,7 +5,7 @@ ruby '2.6.9'
 
 
 # ADDED RUBYZIP
-# gem 'rubyzip'
+gem 'rubyzip', '~> 2.3.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.5'
 #Use pg as the database for Active Record
