@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         services:
             db:
-                image: postgres:11
+                image: postgres11
                 ports: ['5432:5432']
                 options: >-
                     --health-cmd pg_isready
@@ -18,7 +18,7 @@ jobs:
                 options: --entrypoint redis-server
 
         steps:
-            - uses: action/checkout@v1
+            - uses: actions/checkout@v1
             - name: Setup Ruby
             uses: actions/setup-ruby@v1
             with:
