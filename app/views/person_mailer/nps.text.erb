@@ -1,0 +1,5 @@
+How likely is it that you recommend this company to a friend or colleague?
+
+<% 0.upto(10).each do | i | %>
+    <%= link_to i, new_rating_url(score: i) %>
+<% end %>
