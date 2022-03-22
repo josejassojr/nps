@@ -16,7 +16,8 @@
   end
 
   after_create do
-    person.update(score: score)
+    UpdatePersonJob.perform_later(person_id, score)
+    # person.update(score: score)
   end
-  
+
 end
