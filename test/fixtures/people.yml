@@ -3,11 +3,11 @@
 one:
   project: one
   name: MyString
-  email: MyString
+  email: one@example.com
   score: 1
 
 two:
   project: two
   name: MyString
-  email: MyString
+  email: two@example.com
   score: 1

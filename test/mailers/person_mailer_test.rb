@@ -10,7 +10,7 @@ class PersonMailerTest < ActionMailer::TestCase
       email.deliver_now
     end
     assert_equal [person.email], email.to
-    assert_equal "Hello", email.subject
+    assert_equal I18n.t("person_mailer.nps.subject")  , email.subject
     assert_equal ["from@example.com"], email.from
 
     assert_match "How likely", email.body.encoded
@@ -19,9 +19,7 @@ class PersonMailerTest < ActionMailer::TestCase
     end
   end
 
-  
- byebug
-  ActionMailer::Base.deliveries
+
   # test "the truth" do
   #   assert true
   # end

@@ -31,3 +31,7 @@
 
 en:
   hello: "Hello world"
+  person_mailer:
+    nps:
+      subject: "Hello!"
+       
